@@ -25,12 +25,12 @@ class ApiService:
         Executes the API service. Fetches data from the TODOs API and saves the data into CSV files.
         """
         print('Running ApiService', file=stderr)
-        data = self.get_todo_data()
+        data = self.fetch_todo_data()
         for todo in data:
-            self.write_file_data(todo)
+            self.write_todo_data_to_file(todo)
         print('ApiService Finished')
 
-    def get_todo_data(self):
+    def fetch_todo_data(self):
         """
         Fetches data from the TODOs API.
 
@@ -45,7 +45,7 @@ class ApiService:
         else:
             return None
         
-    def write_file_data(self, data):
+    def write_todo_data_to_file(self, data):
         """
         Writes data into a CSV file.
 
