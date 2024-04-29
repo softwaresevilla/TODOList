@@ -1,0 +1,36 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.py[cod]
+
+# CPython
+*.so
+*.pyd
+
+# PyInstaller
+/dist/
+/build/
+/*.spec
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python virtual environments
+/.Python
+bin/
+include/
+lib/
+lib64/
+pyvenv.cfg
+pip-selfcheck.json
+
+# pip
+pip-log.txt
+*.egg-info/
+.installed.cfg
+
+# Visual Studio Code directories
+.vscode/
